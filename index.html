@@ -6,22 +6,30 @@
     <title>Paytm: Yogesh  </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./responsive.css">
 <link rel="shortcut icon" href="./favicun.png" type="image/x-icon">
 </head>
 <body>
     <div class="all-content">
- <nav>
+ <nav>   
     <div class="left">
-       <a href=" https://yogesh832.github.io/Paytm-Yogesh/"> <img src="./logo.png" alt="logo"></a>
+       <a href=" https://yogesh832.github.io/Paytm-Yogesh/">
+         <img src="./logo.png" alt="logo"></a>
     </div>
-    <div class="right">
-        <div class="dropdown">
+    <div class="hamburger" onclick="toggleMenu()"  >
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>  
+    <div class="right" >
+        <div class="navbar" id="navbar">
+        <div class="dropdown" >
             <a class="costumer" href="#"><h4>Paytm for Customer</h4></a>
             <ul class="dropdown-menu">
                 <li class="dropdown-item">
                     <a href="#">Paytm <span class="expand">»</span></a>
                     <ul class="subItems">
-                        <li><a href="#">Bill Payment & Recharge</a></li>
+                        <li><a href="#">ticket Payment & Recharge</a></li>
                         <li><a href="#">Send money to anyone</a></li>
                         <li><a href="#">Online Payments</a></li>
                         <li><a href="#">In Store Payments</a></li>
@@ -65,7 +73,7 @@
         <a href="#"><h4>Company</h4></a>
         <a href="#"><h4>Career</h4></a>
         
-
+    </div>
         <button class="signin" onclick="openModal()">
             Sign In 
             <div class="human">
@@ -73,7 +81,7 @@
             </div>
         </button>
         
-        <div class="modal-signIn">
+        <div class="modal-signIn" id="modal">
             <div class="modal-content">
                 <div class="uppercontent"> 
                     <h2>Login with your Paytm account</h2>
@@ -115,7 +123,57 @@
             <img src="./main.png" alt="">
         </div>
     </div>
+    <div class="page1-responsive">
+        <div class="upper">
+            <div class="left">
+                <img src="./res p1 invest.png" alt="">
+          
+            <p>Investor <br>Relation <br>
+            <span>Latest Update ></span></p>
+        </div>
 
+        <div class="right">
+            <img src="./res p1 star.png" alt="">
+            <p>Career @ Paytm <br> Join   the Revolution <br>></p>
+        </div>
+    </div>
+
+    <div class="main">
+        <img src="./res p1 main.png" alt="">
+    </div>
+<div class="lower">
+   <div class="scan">
+    <span>App Only</span>
+    <img src="./res p1 scan.png" alt="">
+    Scan & Pay
+   </div>
+   <div class="transfer">
+    <span class="app-only">App Only</span>
+    <img src="./res p1 transfer.png" alt=" ">
+    UPI Money <br>
+     Transfer
+   </div>
+   <div class="upi">
+    <span>App Only</span>
+    <img src="./res p1 upi.png" alt="">
+    UPI Lite
+   </div>
+   <div class="passbook">
+    <img src="./res p1 passbook.png" alt="">
+    Passbook
+   </div>
+</div>
+
+    </div>
+    <div class="downloadApp">
+       <div class="img"> <img src="./image1.png" alt=""></div>
+    
+        <div class="text">
+            <h4>Download the App</h2>
+            <p>Lice the Paytm Experience</p>
+        </div>
+        <button>Download Now</button>
+    </div>
 <div class="page2">
     <div class="heading">
 <h1>Recharge & Pay Bills on Paytm.</h1>
@@ -155,6 +213,89 @@
             <p>All Services ></p>
         </div>
     </div>
+</div>
+<div class="page2-responsive">
+
+      <!-- pay your bills -->
+
+<h2>Bill Payment by BBPS</h2>
+<div class="allBills">
+
+<div class="bill">
+    <img src="./p2 mobile.png" alt="">
+    <p> Mobile <br> Prepaid</p>
+</div>
+<div class="bill">
+    <img src="./p2 electricity.png" alt="">
+    <p> Electricity</p>
+</div>
+<div class="bill">
+    <img src="./p2 dth.png" alt="">
+    <p> DTH</p>
+</div>
+<div class="bill ">
+    <img class="all" src="./p2 all others.png" alt="">
+    <p>View All</p>
+</div>
+</div>
+
+    <!-- play games and earn -->
+
+<div class="games">
+    <h2>Play and Earn </h2>
+    <div class="allgames">
+    
+    <div class="game">
+        <img src="./res p2 rummy.png" alt="">
+        <p>Rummy</p>
+    </div>
+    <div class="game">
+        <img src="./res p2 poker.png" alt="">
+        <p> Poker</p>
+    </div>
+    <div class="game">
+        <img src="./res p2 10lakh.png">
+        <p> Win Rs. 10 lakh</p>
+    </div>
+    <div class="game ">
+        <img class="all" src="./res p2 1.5cr.png" alt="">
+        <p>Win Rs. 1.5 crore</p>
+    </div>
+    
+    </div>
+     
+    </div>
+   
+    <!-- all tickets -->
+
+    <div class="tickets">
+<h2>Tickets</h2>
+<div class="allTickets">
+
+<div class="ticket">
+    <img src="./movie.png" alt="">
+    <p> Movie <br> Tickets</p>
+</div>
+<div class="ticket">
+    <img src="./train.png" alt="">
+    <p> Train Tickets</p>
+</div>
+<div class="ticket">
+    <img src="./plane.png">
+    <p> Flight Tickets</p>
+</div>
+<div class="ticket ">
+    <img class="all" src="./bus.png" alt="">
+    <p>Bus Tickets</p>
+</div>
+
+</div>
+<div class="otherTickets">
+    <p>All Services </p>
+ </div>
+
+</div>
+
 </div>
 
 <div class="page3">
@@ -202,6 +343,58 @@
         </div>
     </div>
 </div>
+<div class="page3-responsive">
+    <div class="download-steps">
+<h2>Download Paytm app</h2>
+<div class="first">
+    <div class="left">
+        <img src="./res p3 first.png" alt="">
+    </div>
+<div class="right">
+    <h4>Scan any QR</h4>
+    <p>Make payment at nearby shop.</p>
+</div>
+</div>
+
+<div class="second">
+    <div class="left">
+        <img src="./res p3 second.png" alt="">
+    </div>
+<div class="right">
+    <h4>App only offers </h4>
+    <p>View your personalized offers,scratchcards and points.</p>
+</div>
+</div>
+
+<div class="third">
+    <div class="left">
+        <img src="./res p3 third.png" alt="">
+    </div>
+<div class="right">
+    <h4>Safe and Secure</h4>
+    <p>At paytm your trust is foremost,your money is yours until you  get what you paid for.</p>
+</div>
+</div>
+
+<div class="fourth">
+    <div class="left">
+        <img src="./res p3 fourth.png" alt="">
+    </div>
+<div class="right">
+    <h4>Faster and smoother</h4>
+    <p>Make the most of the enriched in app experience.</p>
+</div>
+</div>
+
+</div>
+<button>Download the app now</button>
+</div>
+
+
+<!-- also in paytm -->
+
+
+
 
 <div class="page4">
     <h1 class="head">
@@ -225,6 +418,49 @@
 
     </div>
 </div>
+
+<div class="page4-responsive">
+<div class="ad">
+    <img src="./res p4 advertisement.png" alt="">
+</div>
+
+<div class="offers">
+    <div class="first">
+        <div class="left">
+            <img src="./res p4 cashback.png" alt="">
+        </div>
+    <div class="right">
+        <h4>Cashback and Offers</h4>
+        <p>View your scratchcards, points and other offers.</p>
+    </div>
+    </div>
+    
+    <div class="second">
+        <div class="left">
+            <img src="./res p4  merchant.png" alt="">
+        </div>
+    <div class="right">
+        <h4>Become a Merchant </h4>
+        <p>Accept Payment with Paytm's payment Gateway,Payment links, QR and much more.</p>
+    </div>
+    </div>
+    
+    <div class="third">
+        <div class="left">
+            <img src="./res p4 costumer care.png" alt="">
+        </div>
+    <div class="right">
+        <h4>24x7 Costumer Care</h4>
+        <p>Get quick resolution on Queries related Paytm.</p>
+    </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
 <footer>
     <div class="upper">
         <div class="first">
@@ -306,6 +542,123 @@
     <div class="blue"></div>
 <div class="voilate"></div>
 </footer>
+<div class="footer-responsive">
+    <div class="upper">
+        <img src="./xlog-.png" alt="">
+        <img src="./instagram.png" alt="">
+        <img src="./facebook.png" alt="">
+                </div>
+    
+<div class="lower">
+        
+       <div class="create add" onclick="openMaterial()"> 
+       <h4> Investor Relation</h4> <span>+</span>
+    </div>
+       <div class="remove" onclick="closeMaterial()">
+       <h4>Investor Relation</h4> <span>X</span>
+    </div>
+            
+     <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+            
+</div>
+
+<div class="lower">
+        
+    <div class="create add" onclick="openMaterial1()"> 
+    <h4> More Abour Paytm</h4> <span>+</span>
+ </div>
+    <div class="remove" onclick="closeMaterial1     ()">
+    <h4>More Abour Paytm</h4> <span>X</span>
+ </div>
+         
+  <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+         
+</div>
+
+
+<div class="lower">
+        
+    <div class="create add" onclick="openMaterial()"> 
+    <h4> Investor Relation</h4> <span>+</span>
+ </div>
+    <div class="remove" onclick="closeMaterial()">
+    <h4>Investor Relation</h4> <span>X</span>
+ </div>
+         
+  <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+         
+</div>
+
+
+<div class="lower">
+        
+    <div class="create add" onclick="openMaterial()"> 
+    <h4> Investor Relation</h4> <span>+</span>
+ </div>
+    <div class="remove" onclick="closeMaterial()">
+    <h4>Investor Relation</h4> <span>X</span>
+ </div>
+         
+  <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+         
+</div>
+
+
+<div class="lower">
+        
+    <div class="create add" onclick="openMaterial()"> 
+    <h4> Investor Relation</h4> <span>+</span>
+ </div>
+    <div class="remove" onclick="closeMaterial()">
+    <h4>Investor Relation</h4> <span>X</span>
+ </div>
+         
+  <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+         
+</div>
+
+
+<div class="lower">
+        
+    <div class="create add" onclick="openMaterial()"> 
+    <h4> Investor Relation</h4> <span>+</span>
+ </div>
+    <div class="remove" onclick="closeMaterial()">
+    <h4>Investor Relation</h4> <span>X</span>
+ </div>
+         
+  <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+         
+</div>
+
+
+<div class="lower">
+        
+    <div class="create add" onclick="openMaterial()"> 
+    <h4> Investor Relation</h4> <span>+</span>
+ </div>
+    <div class="remove" onclick="closeMaterial()">
+    <h4>Investor Relation</h4> <span>X</span>
+ </div>
+         
+  <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+         
+</div>
+
+
+<div class="lower">
+        
+    <div class="create add" onclick="openMaterial()"> 
+    <h4> Investor Relation</h4> <span>+</span>
+ </div>
+    <div class="remove" onclick="closeMaterial()">
+    <h4>Investor Relation</h4> <span>X</span>
+ </div>
+         
+  <div class="material">Lorem ipsum dolor sit amet connecter adipisicing elit. Voluptatem esse ab, animi at quia quidem fugiat obcaecati, eius, id corrupti dignissimos distinctio? Tenetur, maiores quod beatae, dolore veritatis veniam eius ducimus doloremque accusantium culpa ullam magni rerum eos unde aspernatur distinctio temporibus nulla sequi animi impedit ratione nihil corporis. Maiores sit dolorem cum quasi nihil nulla saepe hic quaerat at corrupti quam consequuntur error, soluta tenetur perspiciatis accusamus odit similique quibusdam repellat eius nesciunt? Asperiores porro officiis sed adipisci autem possimus dolores molestiae, nostrum ipsa earum, aliquam praesentium quod quae illum laboriosam natus blanditiis minima excepturi odit incidunt iusto fugiat!</div>
+         
+</div>
+</div>
  </main>
 
 
