@@ -22,7 +22,14 @@ nav .left img {
     padding-left: 4.4vw;
 }
 
-nav .right {
+nav .right .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav .right  {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,12 +43,30 @@ nav .right a {
 
 }
 nav .right h4{
-    padding: 1vw 2vw;
+    padding: 1vw 1vw;
     border-radius: 10px;
 }
 nav .right h4:hover{
     background-color: #e7e4e4;
 }
+.all-content .hamburger{
+  display: none;
+    position:absolute ;
+    left: 1vw;
+    top: 2.8vw;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.hamburger .bar {
+    width: 25px;
+  
+    height: 2px;
+    background-color: #000;
+    margin: 5px 5px;
+}
+
 nav .right .signin {
     padding: 0.5vw 2vw;
     margin: 0 2.9vw;
@@ -53,7 +78,22 @@ nav .right .signin {
     font-weight: 600;
     display: flex;
     align-items: center;
+
+
 }
+nav .right .signin:hover {
+    background-color: #5b15ff;
+}
+
+nav .right .human img {
+    border-radius: 50%;
+    width: 2vw;
+}
+
+
+
+
+
 
 .modal-signIn {
     display: none;
@@ -158,14 +198,6 @@ nav .right .signin {
 
 
 
-nav .right .signin:hover {
-    background-color: #5b15ff;
-}
-
-nav .right .human img {
-    border-radius: 50%;
-    width: 2vw;
-}
 
 
 
@@ -265,7 +297,9 @@ li {
     margin-left: 10px;
 }
 
-
+.page1-responsive,.downloadApp,.page2-responsive,.page3-responsive,.page4-responsive, .footer-responsive {
+    display: none;
+}
 
 .page1{
     background: linear-gradient(to bottom, rgb(235, 231, 231), white);
