@@ -58,6 +58,13 @@ nav .right h4:hover{
     cursor: pointer;
 
 }
+#hamburger-close {
+    display: none;
+    font-size: 7vw;
+
+    padding-left: 2vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .hamburger .bar {
     width: 25px;
@@ -68,16 +75,17 @@ nav .right h4:hover{
 }
 
 nav .right .signin {
-    padding: 0.5vw 2vw;
+    padding: 1vw 1vw;
     margin: 0 2.9vw;
     border: 1px solid #17cbf5;
     border-radius: 50px;
     background-color: #17CBF5;
     color: #FFFFFF;
-    font-size: 1.2vw;
+    font-size: 2vw;
     font-weight: 600;
     display: flex;
     align-items: center;
+    width: 15vw;
 
 
 }
@@ -545,7 +553,7 @@ footer .upper .first h2{
 }
 
 footer .upper .third{
-    padding-left: 39vw;
+    padding-left: 33vw;
 }
 footer .upper .third img{
     cursor: pointer;
