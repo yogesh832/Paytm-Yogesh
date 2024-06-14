@@ -1,23 +1,58 @@
 @media (max-width: 600px){
  
  
+.page1,.page2,.page3,.page4,footer {
+    display: none;
+    }
     nav {
         height:10vh;
+
+        border-bottom: 3px solid rgb(219, 217, 217);
     }
 nav .right .navbar{
     display: none;
   
 }
-nav .right.navbar.active{
-  display: flex;
+nav .left img{
+    height: 9vh;
+}
+nav .right,.left{
+    padding: 6vw 0;
+}
+.navbar{
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.right .navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+   height: fit-content;
+ align-items: start;
+ padding-bottom: 50vw ;
+    max-width: 100%;
+    background-color: #FaFaFa;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+nav .right h4{
+border-bottom: 1px solid rgb(211, 207, 207);
+padding: 5vw;
+width: 100vw;
+border-radius: 0;
+margin: 0;
+font-weight: 500;
 }
 nav .right .signin {
-    margin: 0 0vw 0 20vw;
+    margin: 0vw 0vw 0vw 18vw;
    padding: 0;
    padding-left: 2vw;
 font-size: 3vw;
 width: 21vw;
 font-weight: 500;
+
 
 }
 nav .right .signin:active{
@@ -33,32 +68,67 @@ nav .right .human img {
 
 .all-content .hamburger{
     display: block;
-    margin: 1vw 0vw;
+    margin: 0vw 1vw;
     left: 1vw;
-    top: 2.9vw;
+    top: 3vh;
     margin-left: 2vw;
 }
 
 .all-content .hamburger .bar {
-    width: 20px;
-
+    width: 20px;;
     height: 1px;
     background-color: #000;
     margin: 5px 5px;
 }
+#hamburger-close {
+    
+        display: none;
+        font-size: 7vw;
+        position: absolute;
+        color: gray;
+        padding: 4vw;
+        padding-left: 6vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: display 1s ease-in-out, opacity 0.5s ease-in-out;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 nav .left img {
-    padding: 2.5vw;
+    margin: 2.5vw;
     padding-left: 12.4vw;
     width: 55vw;
 }
-
-
-
-
-
-.page1,.page2,.page3,.page4,footer {
-display: none;
+#menu-icon {
+    transition: display 1s ease-in-out, opacity 0.5s ease-in-out;
 }
+
+/* Modal signIn */
+
+
+.modal-content{
+    display:none ;
+}
+.res-modal-signIn{
+ position: fixed;
+  right: 0;
+  top: 10;
+
+  width: 100vw;
+  height: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Page 1 */
+
+
 .page1-responsive,.downloadApp,.page2-responsive,.page3-responsive,.page4-responsive, .footer-responsive {
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -191,8 +261,8 @@ margin-left: 11vw;
 }
 
 .downloadApp  p{
-    font-size: 3vw;
-    font-weight: 100;
+    font-size: 3.5vw;
+    font-weight: 400;
     padding: 1vw;
 }
 
